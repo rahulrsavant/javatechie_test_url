@@ -10,11 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SpringHerokuExampleApplication {
 
-	@GetMapping("/")
-	public String sayHi() {
-		return "Welcome to Heroku Cloud solution";
-	}
-
 	@GetMapping("/message/{input}")
 	public String getMessage(@PathVariable String input) {
 		return "Welcome " + input;
